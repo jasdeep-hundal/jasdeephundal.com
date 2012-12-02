@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% autoescape false %}
+        {% for project in page.projects %}
+            <h2>{{ project.name }}</h2>
+            {% if project.screenshot %}
+                <img src="{{ project.screenshot }}" height="300">
+            {% endif %}
+            {% if project.code %}
+            <p><a href={{ project.code }}>Code</a></p>
+            {% endif %}
+            {{ project.description }}
+        {% endfor %}
+    {% endautoescape %}
+{% endblock content %}

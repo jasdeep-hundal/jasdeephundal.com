@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+    </head>
+    <body>
+        <ul>
+            {% for page in pages %}
+                <li>
+                    <a href="{{ url_for("page", path=page.path) }}">{{ page.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% block content %}
+            {{ page }}
+        {% endblock content %}
+    </body>
+</html>
