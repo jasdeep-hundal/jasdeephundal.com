@@ -36,4 +36,4 @@ projects:
                     was then used to generate a set of static pages which are now
                     hosted on Google's App Engine.
       code:         https://github.com/jasdeep-hundal/jasdeephundal.com
-      location:     http://jasdeephundal.com
+      location:     http://www.jasdeephundal.com
