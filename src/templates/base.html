@@ -24,9 +24,9 @@
                 <div class="navbar-inner">
                     <div class="container">
                         <ul class="nav" >
-                            {% for page in pages %}
-                                <li>
-                                    <a href="{{ url_for("page", path=page.path) }}">{{ page.name }}</a>
+                            {% for pg in pages %}
+                            <li {% if page.path == pg.path %} class="active" {% endif %}>
+                                    <a href="{{ url_for("page", path=pg.path) }}">{{ pg.name }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
