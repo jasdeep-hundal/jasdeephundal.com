@@ -3,22 +3,33 @@
 {% block content %}
     {% autoescape false %}
         {% for project in page.projects %}
-            <h2>{{ project.name }}</h2>
+            <div class="row">
+                <div class="span4 offset4 pagination-centered"><h2>{{ project.name }}</h2></div>
+            </div>
             {% if project.screenshot %}
-                <img src="{{ project.screenshot }}" height="200">
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="span4 offset4"><img src="{{ project.screenshot }}" class="img-rounded"></div>
+                </div>
             {% endif %}
-            {% if project.code and project.location %}
-            <p>
-                <a href={{ project.code }}>code</a>
-                &nbsp;|&nbsp;
-                <a href={{ project.location }}>see it in action</a>
-            </p>
-            {% elif project.code %}
-                <p><a href={{ project.code }}>code</a></p>
-            {% elif project.location %}
-                <p><a href={{ project.location }}>see it in action</a></p>
-            {% endif %}
-            {{ project.description }}
+            <div class="row">
+                <div class="span4 offset4 pagination-centered">
+                    {% if project.code and project.location %}
+                    <p>
+                            <a href={{ project.code }}>code</a>
+                            &nbsp;|&nbsp;
+                            <a href={{ project.location }}>see it in action</a>
+                        </div>
+                    </p>
+                    {% elif project.code %}
+                        <p><a href={{ project.code }}>code</a></p>
+                    {% elif project.location %}
+                        <p><a href={{ project.location }}>see it in action</a></p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:40px;">
+                <div class="span10 offset1">{{ project.description }}</div>
+            </div>
         {% endfor %}
     {% endautoescape %}
 {% endblock content %}

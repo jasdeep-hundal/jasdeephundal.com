@@ -11,7 +11,7 @@ projects:
             and <a href="http://www.gautamkamath.com">Gautam Kamath</a> to
             build it in < 24 hours for the 2011 Cornell Facebook Hackathon,
             winning 2nd place.
-      screenshot:   ../static/plannit_header.png
+      screenshot:   ../static/img/plannit_header.png
       code:         http://code.google.com/p/night-out/
     - name:         Ezra Tower Defense
       description:  >
@@ -24,16 +24,19 @@ projects:
             joining our team for the 2012 Cornell Facebook Hackathon,
             winning 1st place and earning us trip to the College Hackathon
             Finals.
-      screenshot:   ../static/ezratowerdefense.png
+      screenshot:   ../static/img/ezratowerdefense.png
       code:         https://github.com/dsjas297/Awesome-Possums
     - name:         jasdeephundal.com
       description:  >
                     The website you are seeing right now was constructed
                     using <a href="http://flask.pocoo.org">Flask</a> and
                     <a href="http://packages.python.org/Flask-FlatPages">Flask-FlatPages</a>
-                    to dynamically set the content.
+                    to set the content.
+                    Twitter's
+                    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+                    was used to make it look slightly better than horrendous, while
                     <a href="http://packages.python.org/Frozen-Flask">Frozen-Flask</a>
-                    was then used to generate a set of static pages which are now
+                    generated a set of static pages which are now
                     hosted on Google's App Engine.
       code:         https://github.com/jasdeep-hundal/jasdeephundal.com
       location:     http://www.jasdeephundal.com

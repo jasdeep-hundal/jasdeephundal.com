@@ -15,17 +15,27 @@
 <html>
     <head>
         <title>{{ page.title }}</title>
+        <link href="/static/css/bootstrap.css" rel="stylesheet" media="screen">
     </head>
     <body>
-        <ul>
-            {% for page in pages %}
-                <li>
-                    <a href="{{ url_for("page", path=page.path) }}">{{ page.name }}</a>
-                </li>
-            {% endfor %}
-        </ul>
+        <script src="/static/js/bootstrap.js"></script>
+        <div class="span8 offset2 pagination-centered" style="margin-bottom:60px;">
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <ul class="nav" >
+                            {% for page in pages %}
+                                <li>
+                                    <a href="{{ url_for("page", path=page.path) }}">{{ page.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% block content %}
-            {{ page }}
+            <div class="span10 offset1">{{ page }}</div>
         {% endblock content %}
     </body>
 </html>
