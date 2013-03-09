@@ -4,9 +4,9 @@ name: about
 Hi there! I'm Jasdeep and this would be my website where you can find some
 of my coding [projects](/projects/).
 
-I graduated Cornell University in May 2012 with a Bachelor of Science degree,
-majoring in computer science and picking up minors in both pure and applied
-mathematics. I'm employed as a software engineer at
+I graduated from Cornell University in May 2012 with a Bachelor of Science
+degree, majoring in computer science and picking up minors in both pure and
+applied mathematics. I'm employed as a software engineer at
 [Nebula](http://www.nebula.com), working on private cloud technologies.
 Previously, I interned at [Qualcomm](http://www.qualcomm.com) and
 [STMicroelectronics](http://www.st.com).
